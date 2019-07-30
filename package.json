@@ -1,6 +1,6 @@
 {
   "name": "securitykey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to generate variable length security key",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "uuid": "^3.3.2"
   },
   "keywords": [
-   "securitykey",
-   "randomkey",
-   "generate key",
-   "random",
-   "key"
+    "securitykey",
+    "randomkey",
+    "generate key",
+    "random",
+    "key"
   ]
 }
