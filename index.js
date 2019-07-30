@@ -3,16 +3,16 @@ const uuidv4 = require('uuid/v4');
 function generateKey(minLength, maxLength) {
     let raw = getRawBits(minLength, maxLength);
     console.log('raw bits', raw);
-// define random (1-5) bit to be replaced by random special character
+    // define random (1-5) bit to be replaced by random special character
     let specialBitLength = getRandomNumber(1, 5);
     console.log('will replace', specialBitLength, 'special characters');
     return replaceRandomSpecialCharacters(raw, specialBitLength);
 }
 
 /**
- * sub string random (10-20) bit
- * @returns {string}
- */
+* sub string random (10-20) bit
+* @returns {string}
+*/
 function getRawBits(minLength, maxLength) {
     let guid = uuidv4();
     let shortGuid = guid.toString().replace(new RegExp(/-/, 'g'), '');
@@ -50,16 +50,18 @@ function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min)) + min;
 }
 
-let length = 12;
+// let length = 12;
 
-let keys = [];
-while (length > 0) {
-    console.log();
-    console.log('new key: ');
-    let key = generateKey(10, 20);
-    console.log(key);
-    keys.push(key);
-    length = length - 1;
-}
+// let keys = [];
+// while (length > 0) {
+//     console.log();
+//     console.log('new key: ');
+//     let key = generateKey(10, 20);
+//     console.log(key);
+//     keys.push(key);
+//     length = length - 1;
+// }
 
-console.log(keys);
+// console.log(keys);
+
+module.exports = generateKey;
