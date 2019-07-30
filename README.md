@@ -5,10 +5,10 @@ This is a node js version for generate a security key which matches the followin
 * the key's initial characters are from a random substring of a guid
 * the random (1-5) bits of the key will be replaced by random special characters from "!@#$%^&*()_+{}|~`';:-=[]/?"
 
+## Install
+    npm i securitykey
 
 ## How to use
-
-    npm i securitykey
 
 ```
 var sk=require('securitykey')
