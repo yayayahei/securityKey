@@ -14,5 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "uuid": "^3.3.2"
-  }
+  },
+  "keywords": [
+   "securitykey",
+   "randomkey",
+   "generate key",
+   "random",
+   "key"
+  ]
 }
